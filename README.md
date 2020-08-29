@@ -1,5 +1,5 @@
 # resolve-otio
-An OpenTimelineIO plugin for DaVinci Resolve Studio
+An OpenTimelineIO plugin for DaVinci Resolve Studio. This is a just a simple project used to get familiar with the Python API in Resolve.
 
 Currently only exporting is supported as the Resolve API doesn't have a way of laying out clips on the timeline.
 
