@@ -19,7 +19,7 @@ Currently only exporting is supported as the Resolve API doesn't have a way of l
 
 ## Usage
 ### DaVinci Resolve
-In DaVinci Resolve, open a Python console from *Workspace > Scripts > Console* and run the script with `exec(open("/PATH/TO/otio.py", "rb").read())`.
+In DaVinci Resolve, open a Python console from *Workspace > Scripts > Console* and run the script with `exec(open("/PATH/TO/otio.py", "rb").read())`. This will open a window with two buttons. The first allows for selecting the export destination and the second performs the export.
 ### DaVinci Resolve Studio
 From the DaVinci Resolve Studio menu select *Workspace > Scripts > otio*. This will open a window with two buttons. The first allows for selecting the export destination and the second performs the export.
 
