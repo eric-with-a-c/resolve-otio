@@ -33,11 +33,11 @@ def _create_time_range(start, duration, fps):
 
 def _create_reference(mp_item):
     return otio.schema.ExternalReference(
-        target_url=mp_item.GetClipProperty("File Path").get("File Path"),
+        target_url=mp_item.GetClipProperty("File Path"),
         available_range=_create_time_range(
-            mp_item.GetClipProperty("Start").get("Start"),
-            mp_item.GetClipProperty("Frames").get("Frames"),
-            mp_item.GetClipProperty("FPS").get("FPS")
+            mp_item.GetClipProperty("Start"),
+            mp_item.GetClipProperty("Frames"),
+            mp_item.GetClipProperty("FPS")
         )
     )
 
@@ -63,7 +63,7 @@ def _create_markers(tl_item, frame_rate):
 
 def _create_clip(tl_item):
     mp_item = tl_item.GetMediaPoolItem()
-    frame_rate = mp_item.GetClipProperty("FPS").get("FPS")
+    frame_rate = mp_item.GetClipProperty("FPS")
     clip = otio.schema.Clip(
         name=tl_item.GetName(),
         source_range=_create_time_range(

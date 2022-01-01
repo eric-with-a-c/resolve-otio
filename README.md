@@ -3,6 +3,8 @@ An OpenTimelineIO plugin for DaVinci Resolve Studio. This is a just a simple pro
 
 Currently only exporting is supported as the Resolve API doesn't have a way of laying out clips on the timeline.
 
+Tested with Resolve 17.4.3.
+
 ## Installation
 
 - `pip install opentimelineio`
@@ -25,5 +27,10 @@ From the DaVinci Resolve Studio menu select *Workspace > Scripts > otio*. This w
 
 
 ## Limitations
-- Only export is supported as the Resolve API currently isn't robust enough to import an OTIO
+- Only export is supported as the Resolve API doesn't have a way of laying out clips on the timeline
 - This should work on *Windows* but no work or testing has taken place on *Windows*
+
+## Using Python 3.6
+I found the easiest way to use Python 3.6 with Resolve is to use the installer from python.org but do a custom install and only install the framework. I use a conda Python 3.6 environment for installing pip packages and just make sure to append the site-packages from the conda environment to the path in any scripts I run in Resolve
+
+I wouldn't consider it ideal, but it works.
